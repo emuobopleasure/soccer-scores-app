@@ -1,23 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Footer from './components/Footer';
+import HeroSection from './components/HeroSection';
+import LeagueTable from './components/LeagueTable';
+import MainSection from './components/MainSection';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app relative">
+      <BrowserRouter>
+        <HeroSection/>
+        <Routes>
+          <Route path='/' element={<MainSection/>} />
+          <Route path='/league-table' element={<LeagueTable/>} />
+        </Routes>
+        <Footer/>
+      </BrowserRouter>
     </div>
   );
 }
