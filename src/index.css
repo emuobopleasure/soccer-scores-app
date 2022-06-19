@@ -37,7 +37,7 @@ body {
 
 /* .active.active, */
 .active:hover {
-    border-bottom: 3px solid #fff
+    border-bottom: 3px solid #fff;
 }
 
 .t-head {
@@ -54,3 +54,11 @@ body {
     text-align: center;
     font-weight: 500;
 }
+
+/* .matches-row:nth-child(odd) {
+    border-right: 0.5px solid #dedede;
+} */
+
+/* .match:nth-child(odd) {
+    border-right: 0.5px solid #dedede;
+} */
