@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { NavLink } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 import Matches from './Matches'
 import Table from './Table'
 
@@ -16,9 +16,9 @@ const LeagueTable = () => {
         <div className='league-table max-w-[700px] bg-[#fff] relative bottom-[3.1rem] mx-auto rounded-[0.25rem;] border border-[#dfdfdf]'>
             <div className='inner-section p-[20px] flex flex-col'>
                 <div className='section-title py-[0.5rem] mb-[1rem]'>
-                    <a href='#/' className='fancy-link'>
+                    <Link to='/' className='fancy-link'>
                         All Competitions
-                    </a>
+                    </Link>
                     <span className='divider mx-[0.5rem]'>
                         /
                     </span>
